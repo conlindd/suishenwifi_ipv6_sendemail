@@ -66,6 +66,7 @@ def send_an_email(email_content): # email_content是一个字符串
     
     # 具体的IPv6地址
     message.attach(MIMEText(email_content, 'plain', 'utf-8'))
+    message.attach(MIMEText('\n使用方法:\nhttp://[你的ipv6地址号]:端口号 \n然后输入到浏览器地址栏进行访问', 'plain', 'utf-8')) # 帮助信息
     # print("message is {}".format(message.as_string())) # debug用
     smtpObj = smtplib.SMTP(mail_host)
     # smtpObj.set_debuglevel(1) # 同样是debug用的

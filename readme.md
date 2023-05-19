@@ -16,7 +16,8 @@ root@4G-wifi:~# apt-get install python3 python3-requests python3-gi python3-dbus
 root@4G-wifi:~# 
 root@4G-wifi:~# cd /usr/local
 root@4G-wifi:/usr/local# mkdir gipv6
-root@4G-wifi:/usr/local# vim get_ipv6_email.py
+root@4G-wifi:/usr/local# cd gipv6
+root@4G-wifi:/usr/local/gipv6# vim get_ipv6_email.py
 
 然后将本项目get_ipv6_email.py文件的内容复制进去
 
@@ -53,7 +54,7 @@ sudo vim /etc/rc.local
 
 把下边这句填入 exit 0上面
 
-/usr/bin/python3 /usr/local/get_ipv6_email.py > /usr/local/get_ipv6_email.log
+/usr/bin/python3 /usr/local/gipv6/get_ipv6_email.py > /usr/local/gipv6/get_ipv6_email.log
 ```
 
 
