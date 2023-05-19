@@ -27,7 +27,7 @@ root@4G-wifi:/usr/local# vim get_ipv6_email.py
 #### 2.然后把你的邮箱信息填写进去
 
 ```
-	mail_host = "smtp.163.com" # 这个去邮箱找
+    mail_host = "smtp.163.com" # 这个去邮箱找
     mail_user = '1xxxxxxx0@163.com' #发送的邮件地址
     mail_auth_code = 'YxxxxxxxxH' #授权码，不是邮箱的登陆密码
     mail_sender = mail_user # 用mail_user 作为发送人
